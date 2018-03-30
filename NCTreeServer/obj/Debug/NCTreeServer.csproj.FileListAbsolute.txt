@@ -1,0 +1,14 @@
+D:\ALNode\NCTreeServer\ConsoleApplication\bin\Debug\NCTreeServer.exe.config
+D:\ALNode\NCTreeServer\ConsoleApplication\bin\Debug\AbsUnity.exe.config
+D:\ALNode\NCTreeServer\NCTreeServer\bin\Debug\AbsUnity.exe.config
+D:\ALNode\NCTreeServer\NCTreeServer\bin\Debug\AbsUnity.exe
+D:\ALNode\NCTreeServer\NCTreeServer\bin\Debug\AbsUnity.pdb
+D:\ALNode\NCTreeServer\NCTreeServer\obj\Debug\NCTreeServer.csprojResolveAssemblyReference.cache
+D:\ALNode\NCTreeServer\NCTreeServer\obj\Debug\AbsUnity.exe
+D:\ALNode\NCTreeServer\NCTreeServer\obj\Debug\AbsUnity.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeServer\NCTreeServer\bin\Debug\AbsUnity.exe.config
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeServer\NCTreeServer\obj\Debug\AbsUnity.exe
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeServer\NCTreeServer\obj\Debug\AbsUnity.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeServer\NCTreeServer\bin\Debug\AbsUnity.exe
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeServer\NCTreeServer\bin\Debug\AbsUnity.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeServer\NCTreeServer\obj\Debug\NCTreeServer.csprojResolveAssemblyReference.cache

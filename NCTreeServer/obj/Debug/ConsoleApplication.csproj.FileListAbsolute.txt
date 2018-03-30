@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\Users\Administrator\Desktop\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+C:\Users\Administrator\Desktop\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+C:\Users\Administrator\Desktop\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\Users\Administrator\Desktop\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+D:\ALNode\NCTreeServer\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+D:\ALNode\NCTreeServer\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+D:\ALNode\NCTreeServer\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+D:\ALNode\NCTreeServer\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+D:\ALNode\NCTreeServer\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+D:\ALNode\NCTreeServer\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+D:\ALNode\NCTreeServer\ConsoleApplication\bin\Debug\NCTreeServer.exe.config
