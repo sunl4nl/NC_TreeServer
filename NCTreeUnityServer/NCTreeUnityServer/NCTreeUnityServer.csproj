@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29B14127-8BF7-44C4-8CE6-39E6AE142F0E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NCTreeUnityServer</RootNamespace>
+    <AssemblyName>NCTreeUnityServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NO_UNITY,SERVER_UNITY</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnikonUnityEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\UnikonUnityEngine\bin\Debug\UnikonUnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\CanvasGroup_NC.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\Connection.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\Graph.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\GraphInfoAttribute.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\GraphOwner.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\Interfaces.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\Internal\GraphSerializationData.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\Internal\MissingConnection.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\Internal\MissingNode.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\Internal\VersionUpdateProxyGraph.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Graphs\Node.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\ReflectionWrappers\ReflectedAction.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\ReflectionWrappers\ReflectedFunction.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\ReflectionWrappers\ReflectedMethodWrapper.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Status.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Tasks\ActionList.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Tasks\ActionTask.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Tasks\ConditionList.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Tasks\ConditionTask.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Tasks\Internal\MissingAction.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Tasks\Internal\MissingCondition.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Tasks\ITaskSystem.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Tasks\Task.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\BBParameter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\Blackboard.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\GlobalBlackboard.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\IBlackboard.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\Internal\BBObjectParameter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\Internal\BlackboardSource.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\Internal\MissingBBParameterType.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\Internal\MissingVariableType.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\SyncBlackboard.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\Runtime\Variables\Variable.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\Attributes.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\AOTClassesGenerator.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\CompleteContextMenu.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\CustomObjectDrawers.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\DocsByReflection.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\EditorUtils\EditorUtils.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\EditorUtils\EditorUtils_AssetCreation.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\EditorUtils\EditorUtils_BBParameterEditor.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\EditorUtils\EditorUtils_ContextMenus.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\EditorUtils\EditorUtils_GUI.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\EditorUtils\EditorUtils_GUIEditors.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\EditorUtils\EditorUtils_ReorderableList.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\EditorUtils\EditorUtils_TaskFieldEditor.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\GenericInspectorWindow.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\PreferedTypesEditorWindow.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\UndoManager.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Design\PartialEditor\UserTypePrefs.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Other\Enumerations.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Other\EventData.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Other\IScriptableComponent.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Other\OperationTools.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Other\RectUtils.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Other\ReflectionTools.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Other\StringUtils.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\DeserializeFromAttribute.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\fsRecoveryProcessor.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\fsUnityObjectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsArrayConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsDateConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsDictionaryConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsEnumConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsForwardConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsGuidConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsIEnumerableConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsKeyValuePairConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsNullableConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsPrimitiveConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsReflectedConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsTypeConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsWeakReferenceConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\AnimationCurve_DirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\Bounds_DirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\Gradient_DirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\GUIStyleState_DirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\GUIStyle_DirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\Keyframe_DirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\LayerMask_DirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\RectOffset_DirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\Rect_DirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsAotCompilationManager.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsBaseConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsConfig.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsContext.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsConverterRegistrar.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsData.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsDirectConverter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsExceptions.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsIgnoreAttribute.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsISerializationCallbacks.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsJsonParser.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsJsonPrinter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsMemberSerialization.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsObjectAttribute.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsObjectProcessor.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsPropertyAttribute.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsResult.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\fsSerializer.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsCyclicReferenceManager.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsOption.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsPortableReflection.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsTypeExtensions.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsVersionedType.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsVersionManager.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Reflection\fsMetaProperty.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Reflection\fsMetaType.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Reflection\fsReflectionUtility.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Reflection\fsTypeCache.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\IMissingRecoverable.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\JSONSerializer.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\SerializedMethodInfo.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Services\MessageRouter.cs" />
+    <Compile Include="Program\NodeCanvas\Framework\_Commons\Runtime\Services\MonoManager.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\ActionListPlayer\ActionListPlayer.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\ActionListPlayer\Editor\ActionListPlayerInspector.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\BehaviourTree.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\BehaviourTreeOwner.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\BTConnection.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\BTNode.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\BehaviourTreeOwnerInspector.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\BTComposite.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\BTDecorator.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Composites\BinarySelector.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Composites\FlipSelector.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Composites\Parallel.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Composites\PrioritySelector.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Composites\ProbabilitySelector.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Composites\Selector.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Composites\Sequencer.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Composites\StepIterator.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Composites\Switch.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\ConditionalEvaluator.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Filter.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Guard.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Interruptor.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Inverter.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Iterator.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Optional.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Remapper.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Repeater.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Setter.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\Timeout.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Decorators\WaitUntil.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Leafs\ActionNode.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Leafs\ConditionNode.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Leafs\NestedFSM.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Leafs\NodeToggler.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Leafs\RootSwitcher.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\BehaviourTrees\Nodes\Leafs\SubTree.cs" />
+    <Compile Include="Program\NodeCanvas\Modules\Editor\Commands.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animation %28Legacy%29\PlayAnimationAdvanced.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animation %28Legacy%29\PlayAnimationSimple.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animator\MecanimPlayAnimation.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animator\MecanimSetBool.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animator\MecanimSetFloat.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animator\MecanimSetIK.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animator\MecanimSetInt.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animator\MecanimSetLayerWeight.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animator\MecanimSetLookAt.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Animator\MecanimSetTrigger.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Audio\PlayAudioAtPosition.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\ComposeVector.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\DecomposeVector.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\EvaluateCurve.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\GetOtherBlackboardVariable.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\GetToString.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\AddElementToList.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\ClearList.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\GetIndexOfElement.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\GetListCount.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\InsertElementToList.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\PickListElement.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\PickRandomListElement.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\RemoveElementFromList.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\SetListElement.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\ShuffleList.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\List Specific\SortGameObjectListByDistance.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\LoadBlackboard.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\NormalizeVector.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SampleCurve.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SaveBlackboard.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetBoolean.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetBooleanRandom.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetEnum.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetFloat.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetFloatRandom.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetInt.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetIntRandom.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetOtherBlackboardVariable.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetVariable.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Blackboard\SetVector3.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Camera\CameraFader.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Camera\FadeIn.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Camera\FadeOut.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Dialogue\Say.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Dialogue\SayRandom.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Dialogue\StartDialogueTree.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\CreateGameObject.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\CreatePrimitive.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\DestroyGameObject.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\FindAllWithName.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\FindAllWithTag.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\FindClosestWithTag.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\FindObjectOfType.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\FindObjectsOfType.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\FindWithName.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\FindWithTag.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\GetAllChildGameObjects.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\GetCloserGameObjectInList.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\GetComponent.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\GetDistance.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\GetGameObjectPosition.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\InstantiateGameObject.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\LookAt.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\RemoveComponent.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\GameObject\SetObjectActive.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Input\GetInputAxis.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Input\GetMousePosition.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Input\GetMouseScrollDelta.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Input\WaitMousePick.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Input\WaitMousePick2D.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\FindClosestEdge.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\Flee.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\InputMove.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\MoveAway.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\MoveToGameObject.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\MoveToPosition.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\MoveTowards.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\Patrol.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\RotateAway.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\RotateTowards.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Movement\Wander.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Physics\GetLinecastInfo.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Physics\GetLinecastInfo2D.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Physics\GetLinecastInfo2DAll.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Physics\GetOverlapSphereObjects.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\ExecuteFunction.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\ExecuteStaticFunction.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\GetField.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\GetProperty.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\ImplementedAction.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\Multiplatform\ExecuteFunction_Multiplatform.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\Multiplatform\ExecuteStaticFunction_Multiplatform.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\Multiplatform\GetProperty_Multiplatform.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\Multiplatform\ImplementedAction_Multiplatform.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\Multiplatform\SetProperty_Multiplatform.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\SendMessage.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\SendMessageToType.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\SetField.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\ScriptControl\SetProperty.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\DebugBeep.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\DebugDrawLine.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\DebugLogText.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\DebugLogVariable.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\GraphOwnerControl.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\RunForever.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\SendEvent.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\SendEventToObjects.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\ShoutEvent.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\SwitchBehaviour.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\TriggerBoolean.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Actions\Utility\Wait.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Animator\MecanimCheckBool.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Animator\MecanimCheckFloat.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Animator\MecanimCheckInt.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Animator\MecanimIsInTransition.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\CheckBoolean.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\CheckEnum.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\CheckFloat.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\CheckInt.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\CheckString.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\CheckUnityObject.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\CheckVariable.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\ListContainsElement.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\ListIsEmpty.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Blackboard\StringContains.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\GameObject\CanSeeTarget.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\GameObject\CheckDistanceToGameObject.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\GameObject\CheckLOS.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\GameObject\CheckLOS2D.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\GameObject\CheckSpeed.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\GameObject\HasComponent.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\GameObject\IsActive.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\GameObject\IsInFront.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Input\CheckButtonInput.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Input\CheckKeyboardInput.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Input\CheckMousePick.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Input\CheckMousePick2D.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Movement\PathExists.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\ScriptControl\CheckCSharpEvent.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\ScriptControl\CheckField.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\ScriptControl\CheckFunction.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\ScriptControl\CheckProperty.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\ScriptControl\CheckStaticCSharpEvent.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\ScriptControl\Multiplatform\CheckFunction_Multiplatform.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\ScriptControl\Multiplatform\CheckProperty_Multiplatform.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\SystemEvents\CheckCollision.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\SystemEvents\CheckCollision2D.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\SystemEvents\CheckMouse.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\SystemEvents\CheckMouse2D.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\SystemEvents\CheckMouseClick.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\SystemEvents\CheckMouseClick2D.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\SystemEvents\CheckTrigger.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\SystemEvents\CheckTrigger2D.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\UGUI\ButtonClicked.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\UGUI\InterceptEvent.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Utility\CheckEvent.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Utility\CheckEventValue.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Utility\DebugCondition.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Utility\Probability.cs" />
+    <Compile Include="Program\NodeCanvas\Tasks\Conditions\Utility\Timeout.cs" />
+    <Compile Include="Program\War\AI\CNodeTree.cs" />
+    <Compile Include="Program\War\AI\Tasks\Actions\Act_Attack.cs" />
+    <Compile Include="Program\War\AI\Tasks\Actions\Act_Chase.cs" />
+    <Compile Include="Program\War\AI\Tasks\Actions\Act_Move.cs" />
+    <Compile Include="Program\War\AI\Tasks\Actions\Act_Seek.cs" />
+    <Compile Include="Program\War\AI\Tasks\Conditions\Con_Seek.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program\MoveComponent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\NCTreeUnityServer.exe.config" />
+    <None Include="bin\Debug\NCTreeUnityServer.vshost.exe.config" />
+    <None Include="bin\Debug\NCTreeUnityServer.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Program\NodeCanvas\!QuickStart!.pdf" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsArrayConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsDateConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsDictionaryConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsEnumConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsForwardConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsGuidConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsIEnumerableConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsKeyValuePairConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsNullableConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsPrimitiveConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsReflectedConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsTypeConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\fsWeakReferenceConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\AnimationCurve_DirectConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\Bounds_DirectConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\Gradient_DirectConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\GUIStyleState_DirectConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\GUIStyle_DirectConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\Keyframe_DirectConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\LayerMask_DirectConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\RectOffset_DirectConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Converters\Unity\Rect_DirectConverter.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsCyclicReferenceManager.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsOption.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsPortableReflection.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsTypeExtensions.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsVersionedType.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Internal\fsVersionManager.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Reflection\fsMetaProperty.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Reflection\fsMetaType.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Reflection\fsReflectionUtility.cs.meta" />
+    <None Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\Full Serializer\Reflection\fsTypeCache.cs.meta" />
+    <None Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\_AllIconsPSD.psd" />
+    <None Include="Resources\LLogTree.BT" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\NCTreeUnityServer.vshost.exe" />
+    <Content Include="obj\Debug\NCTreeUnityServer.csproj.FileListAbsolute.txt" />
+    <Content Include="Program\NodeCanvas\!ReadMe!.txt" />
+    <Content Include="Program\NodeCanvas\Framework\_Commons\Runtime\Serialization\_LICENSE - FULL SERIALIZER.txt" />
+    <Content Include="Program\NodeCanvas\GraphOwnerGizmo.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Accessor.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Action.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\BT.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Condition.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Dialogue.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\FlipSelector.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\FSM.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\IndexSwitcher.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Interruptor.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\List.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Lock.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Log.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Parallel.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Priority.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\ProbabilitySelector.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Remap.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Repeat.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Selector.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Sequencer.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Set.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Shield.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\StepIterator.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\Timeout.png" />
+    <Content Include="Program\NodeCanvas\Modules\BehaviourTrees\Editor\Resources\WaitUntil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Program\War\AI\Component\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ihaiu.Loger\IhaiuLog\IhaiuLog\IhaiuLog.csproj">
+      <Project>{e0bb8ef9-337d-436b-b84e-c9d93d824f9a}</Project>
+      <Name>IhaiuLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

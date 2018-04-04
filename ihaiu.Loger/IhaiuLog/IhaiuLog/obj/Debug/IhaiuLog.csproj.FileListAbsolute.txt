@@ -1,0 +1,5 @@
+C:\Gidea\Gidea-MT-Client\LibProjects\ihaiu.Loger\IhaiuLog\IhaiuLog\bin\Debug\IhaiuLog.dll
+C:\Gidea\Gidea-MT-Client\LibProjects\ihaiu.Loger\IhaiuLog\IhaiuLog\bin\Debug\IhaiuLog.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\ihaiu.Loger\IhaiuLog\IhaiuLog\obj\Debug\IhaiuLog.dll
+C:\Gidea\Gidea-MT-Client\LibProjects\ihaiu.Loger\IhaiuLog\IhaiuLog\obj\Debug\IhaiuLog.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\ihaiu.Loger\IhaiuLog\IhaiuLog\obj\Debug\IhaiuLog.csprojResolveAssemblyReference.cache

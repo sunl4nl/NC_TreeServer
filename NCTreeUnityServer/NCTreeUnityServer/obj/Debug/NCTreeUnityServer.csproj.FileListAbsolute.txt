@@ -1,0 +1,10 @@
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\bin\Debug\NCTreeUnityServer.exe.config
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\obj\Debug\NCTreeUnityServer.csprojResolveAssemblyReference.cache
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\bin\Debug\NCTreeUnityServer.exe
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\bin\Debug\NCTreeUnityServer.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\bin\Debug\UnikonUnityEngine.dll
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\bin\Debug\UnikonUnityEngine.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\obj\Debug\NCTreeUnityServer.exe
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\obj\Debug\NCTreeUnityServer.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\bin\Debug\IhaiuLog.dll
+C:\Gidea\Gidea-MT-Client\LibProjects\NCTreeUnityServer\NCTreeUnityServer\bin\Debug\IhaiuLog.pdb

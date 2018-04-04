@@ -1,0 +1,4 @@
+﻿!*.log
+!*.dll
+!*.exe
+.vs/NCTreeUnityServer/v14/.suo

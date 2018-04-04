@@ -1,0 +1,13 @@
+C:\zengfeng\github\learn.ForgeNetworking\ihaiu\UnikonUnityEngine\bin\Debug\UnikonUnityEngine.dll
+C:\zengfeng\github\learn.ForgeNetworking\ihaiu\UnikonUnityEngine\bin\Debug\UnikonUnityEngine.pdb
+C:\zengfeng\github\learn.ForgeNetworking\ihaiu\UnikonUnityEngine\obj\Debug\UnikonUnityEngine.dll
+C:\zengfeng\github\learn.ForgeNetworking\ihaiu\UnikonUnityEngine\obj\Debug\UnikonUnityEngine.pdb
+C:\zengfeng\github\learn.ForgeNetworking\ihaiu\UnikonUnityEngine\obj\Debug\UnikonUnityEngine.csprojResolveAssemblyReference.cache
+E:\zengfeng\github\ihaiu.UnikonUnityEngine\UnikonUnityEngine\bin\Debug\UnikonUnityEngine.dll
+E:\zengfeng\github\ihaiu.UnikonUnityEngine\UnikonUnityEngine\bin\Debug\UnikonUnityEngine.pdb
+E:\zengfeng\github\ihaiu.UnikonUnityEngine\UnikonUnityEngine\obj\Debug\UnikonUnityEngine.dll
+E:\zengfeng\github\ihaiu.UnikonUnityEngine\UnikonUnityEngine\obj\Debug\UnikonUnityEngine.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\UnikonUnityEngine\bin\Debug\UnikonUnityEngine.dll
+C:\Gidea\Gidea-MT-Client\LibProjects\UnikonUnityEngine\bin\Debug\UnikonUnityEngine.pdb
+C:\Gidea\Gidea-MT-Client\LibProjects\UnikonUnityEngine\obj\Debug\UnikonUnityEngine.dll
+C:\Gidea\Gidea-MT-Client\LibProjects\UnikonUnityEngine\obj\Debug\UnikonUnityEngine.pdb
